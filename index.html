@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Rubik:wght@400;700&family=Scheherazade+New:wght@700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/680b19597b.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="estilos.css">
+    <title>Portfolio - Chiara Todaro</title>
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <div class="logo">
+                <h1>Chiara Todaro</h1>
+                <p>Fotografia</p>
+            </div>
+            <form id="buscador">
+                <input name="myText" type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
+            </form>
+            <div class="categorias" id="categorias">
+                <a href="index.html" class="activo">Todos</a>
+                <button id="btnRetratos" onClick="renderizarItems('retratos')">Retratos</button>
+                <button id="btnAnimales" onClick="renderizarItems('animales')">Animales</button>
+                <button id="btnArquitectura" onClick="renderizarItems('arquitectura')">Arquitectura</button>
+                <button id="btnNaturaleza" onClick="renderizarItems('naturaleza')">Naturaleza</button>
+                <button id="btnProducto" onClick="renderizarItems('producto')">Producto</button>
+                <button id="btnMacrofotografía" onClick="renderizarItems('macrofotografía')">Macrofotografía</button>
+                <button id="btnPublicidad" onClick="renderizarItems('publicidad')">Publicidad</button>
+            </div>
+        </header>
+
+        <main>
+          <section>
+               <div class="grid" id="grid">
+                    <div class="item" 
+                         data-categoria="retratos" 
+                         data-etiquetas="retratos caras imagen figura cuadro"
+                    >
+                         <div class="item-contenido">
+                              <img src="img/retratos/ret1.png" alt="">
+                         </div>
+                    </div>
+                    <div class="item"
+                         data-categoria="retratos" 
+                         data-etiquetas="retratos caras imagen figura cuadro"
+                    >
+                         <div class="item-contenido">
+                              <img src="img/retratos/ret3.png" alt="">
+                         </div>
+                    </div>
+                    <div class="item"
+                         data-categoria="retratos" 
+                         data-etiquetas="retratos caras imagen figura cuadro"
+                    >
+                         <div class="item-contenido">
+                              <img src="img/retratos/ret4.png" alt="">
+                         </div>
+                    </div>
+                    
+               </div>
+               <div class="grid" id="grid">
+                    <div class="item" 
+                         data-categoria="arquitectura" 
+                         data-etiquetas="arquitectura edificios estructura construccion"
+                    >
+                         <div class="item-contenido">
+                              <img src="img/arquitectura/arq1.png" alt="">
+                         </div>
+                    </div>
+                    <div class="item" 
+                         data-categoria="arquitectura" 
+                         data-etiquetas="arquitectura edificios estructura construccion"
+                    >
+                         <div class="item-contenido">
+                              <img src="img/arquitectura/arq2.png" alt="">
+                         </div>
+                    </div>
+                    <div class="item" 
+                         data-categoria="arquitectura" 
+                         data-etiquetas="arquitectura edificios estructura construccion"
+                    >
+                         <div class="item-contenido">
+                              <img src="img/arquitectura/arq3.png" alt="">
+                         </div>
+                    </div>
+               </div>
+               <div class="grid" id="grid">
+
+                    <div class="item" 
+                         data-categoria="arquitectura" 
+                         data-etiquetas="arquitectura edificios estructura construccion"
+                    >
+                         <div class="item-contenido">
+                              <img src="img/arquitectura/arq5.png" alt="">
+                         </div>
+                    </div>
+                    <div class="item" 
+                         data-categoria="arquitectura" 
+                         data-etiquetas="arquitectura edificios estructura construccion"
+                    >
+                         <div class="item-contenido">
+                              <img src="img/arquitectura/arq6.png" alt="">
+                         </div>
+                    </div>
+                    <div class="item" 
+                         data-categoria="naturaleza" 
+                         data-etiquetas="naturaleza paisaje mar"
+                    >
+                         <div class="item-contenido">
+                              <img src="img/naturaleza/nat1.jpg" alt="">
+                         </div>
+                    </div>
+               </div>  
+               <div class="grid" id="grid"> 
+                    <div class="item" 
+                         data-categoria="producto" 
+                         data-etiquetas="producto articulo emprendimiento"
+                    >
+                         <div class="item-contenido">
+                              <img src="img/producto/prod1.png" alt="">
+                         </div>
+                    </div>
+                    <div class="item" 
+                         data-categoria="producto" 
+                         data-etiquetas="producto articulo emprendimiento"
+                    >
+                         <div class="item-contenido">
+                              <img src="img/producto/prod2.png" alt="">
+                         </div>
+                    </div>
+                    <div class="item" 
+                         data-categoria="producto" 
+                         data-etiquetas="producto articulo emprendimiento"
+                    >
+                         <div class="item-contenido">
+                              <img src="img/producto/prod3.png" alt="">
+                         </div>
+                    </div>
+               </div>          
+               <div class="grid" id="grid">               
+                    <div class="item" 
+                         data-categoria="producto" 
+                         data-etiquetas="producto articulo emprendimiento"
+                    >
+                         <div class="item-contenido">
+                              <img src="img/producto/prod4.png" alt="">
+                         </div>
+                    </div>
+                    <div class="item" 
+                         data-categoria="producto" 
+                         data-etiquetas="producto articulo emprendimiento"
+                    >
+                         <div class="item-contenido">
+                              <img src="img/producto/prod5.png" alt="">
+                         </div>
+                    </div>
+                    <div class="item" 
+                         data-categoria="producto" 
+                         data-etiquetas="producto articulo emprendimiento"
+                    >
+                         <div class="item-contenido">
+                              <img src="img/producto/prod6.png" alt="">
+                         </div>
+                    </div>
+               </div>
+               <div class="grid" id="grid">
+                    <div class="item" 
+                         data-categoria="ublicidad" 
+                         data-etiquetas="publicidad trabajo tatuajes"
+                    >
+                         <div class="item-contenido">
+                              <img src="img/publicidad/publ1.png" alt="">
+                         </div>
+                    </div>
+                    <div class="item" 
+                         data-categoria="publicidad" 
+                         data-etiquetas="publicidad trabajo tatuajes"
+                    >
+                         <div class="item-contenido">
+                              <img src="img/publicidad/publ2.png" alt="">
+                         </div>
+                    </div>
+                    <div class="item" 
+                         data-categoria="publicidad" 
+                         data-etiquetas="publicidad trabajo tatuajes"
+                    >
+                         <div class="item-contenido">
+                              <img src="img/publicidad/publ3.png" alt="">
+                         </div>
+                    </div>
+               </div>
+               <div class="grid" id="grid">
+                    <div class="item" 
+                         data-categoria="animales" 
+                         data-etiquetas="animales perro gato"
+                    >
+                         <div class="item-contenido">
+                              <img src="img/animales/animales1.png" alt="">
+                         </div>
+                    </div>
+                    <div class="item" 
+                         data-categoria="macrofotografía" 
+                         data-etiquetas="macrofotografia pequeño"
+                    >
+                         <div class="item-contenido">
+                              <img src="img/macro/macro3.png" alt="">
+                         </div>
+                    </div>
+                    <div class="item" 
+                         data-categoria="macrofotografía" 
+                         data-etiquetas="macrofotografia pequeño"
+                    >
+                         <div class="item-contenido">
+                              <img src="img/macro/macro2.png" alt="">
+                         </div>
+                    </div>
+               </div>
+               <div class="grid" id="grid">
+                    <div class="item" 
+                         data-categoria="naturaleza" 
+                         data-etiquetas="naturaleza paisaje mar"
+                    >
+                         <div class="item-contenido">
+                              <img src="img/naturaleza/nat3.jpg" alt="">
+                         </div>
+                    </div>
+                    <div class="item" 
+                         data-categoria="naturaleza" 
+                         data-etiquetas="naturaleza paisaje mar"
+                    >
+                         <div class="item-contenido">
+                              <img src="img/naturaleza/nat2.jpg" alt="">
+                         </div>
+                    </div>
+               </div>
+          </section>
+     
+          <section class="overlay" id="overlay">
+             <div class="contenedor-img">
+                  <button id="btn-cerrar-popup"><i class="fas fa-times"></i></button>
+                  <img src="" alt="">
+             </div>
+          </section>
+        </main>
+
+        <footer class="contenedor">
+             <div class="redes-sociales">
+               <div class="contenedor-icono">
+                    <a href="https://twitter.com/" target="_blank" class="twitter">
+                         <i class="fab fa-twitter"></i>
+                    </a>
+               </div>
+               <div class="contenedor-icono">
+                    <a href="https://www.facebook.com/" target="_blank" class="facebook">
+                         <i class="fab fa-facebook"></i>
+                    </a>
+               </div>
+               <div class="contenedor-icono">
+                    <a href="https://www.instagram.com/tbchiara.vol2/" target="_blank" class="instagram">
+                         <i class="fab fa-instagram"></i>
+                    </a>
+               </div>
+             </div>
+             <div class="creado-por">
+                  <p>Sitio diseñado por <a href="#">Lisseth Bastiani</a></p>
+             </div>
+
+        </footer>
+    </div>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.5/dist/muuri.min.js"></script> -->
+    <script src="main.js"></script>
+</body>
+</html>
